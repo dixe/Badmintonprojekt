@@ -1,0 +1,49 @@
+Worklist (programmering):
+
+- Lav login side med grundlæggende layout og navigering imellem siderne, men ellers uden funktionalitet (1 time)
+
+- lav main side med grundlæggende layout og navigering imellem siderne, men ellers uden funktionalitet (1 time)
+
+- lav settings side med grundlæggende layout og navigering imellem siderne, men ellers uden funktionalitet (1 time)
+
+- lav editplayer page med grundlæggende layout og navigering imellem siderne, men ellers uden funktionalitet (1 time)
+
+- lav addplayer page med grundlæggende layout og navigering imellem siderne, men ellers uden funktionalitet (1 time)
+
+- lav newround page med grundlæggende layout og navigering imellem siderne, men ellers uden funktionalitet (1 time)
+
+
+worklist (rapport):
+
+- Læs og skriv review af "Gould, J. D. and Lewis, C. (1985), Designing for usability: key principles and what designers think." (3 timer)
+
+- Læs og skriv review af "Parnas, D. L. and Clements, P. C. (1986), A rational design process: How and why to fake it." (3 timer)
+
+- skriv abstract til rapporten på engelsk (1 time)
+
+- skriv FACTOR kriterier i problem definition (1 time)
+
+- lav høj-niveau UML diagram over vores 3 aktørers use-cases (2 timer)
+
+- lav use-case diagram for banesætteren (2 timer)
+
+- lav sequence diagram for banesætterens use-case (1 time)
+
+- lav use-case diagram for spillerne (1 time)
+
+- lav sequence diagram for spillerens use-case (1 time)
+
+- lav use-case diagram for en person der vil se statistik fra systemet (fx bestyrelsesmedlem) (1 time)
+
+- lav sequence diagram for bestyrelsemedlemmets use-case (1 time)
+
+- lav klasse-diagram over problemområdet som vores web-applikation beskæftiger sig med (2 timer)
+
+- Indsæt vores UI sketches i rapporten, samt selve prototypen der er baseret på disse + kommentar (0,5 time)
+
+- Indsæt git-log i bilag (0,1 time)
+
+- Skriv om projektsamarbejdet (fælles: 1 time)
+
+
+Ialt : 26,6 timer
