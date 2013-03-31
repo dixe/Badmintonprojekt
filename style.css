@@ -1,10 +1,30 @@
-#mainframe {font-family:Verdana, Geneva, sans-serif; border-collapse:collapse;}
-#content {min-height:650px; min-width:800px; }
-#innerEdge, #bottombar {border:1px solid black; background-color:lightgrey;}
-#statusbar {color:red; min-height:20px;}
-#clubname {font-size:0.85em; color:black; }
+#mainframe {font-family:Verdana, Geneva, sans-serif; border-collapse:collapse; padding:0;}
+#content {height:650px; width:800px;}
+#innerEdge, #bottombar, #buttonPanel {border:1px solid black; background-color:lightgrey;}
 
-/* bruges af main.php  */
+/*  main.php  */
+#buttonPanel {width:200px; height:650px;}
 #buttonPanel input {width:150px;}
 .button1 {position:relative; top:-170px;}
-#button2 {position:relative; top:220px;}
+#button2 {position:relative; top:320px;}
+#buttons {margin:auto; width:70%;}
+#content {overflow:auto;}
+#playerlist {position:relative; top:30px; right:-30px;}
+#playerlist td {text-align:left;}
+#spiller {width:600px; text-align:left;}
+#playerlist th {background-color:grey;}
+#fieldCount {position:relative; top:30px; right:-30px; width:400px;}
+
+/* addplayer.php */
+#addtable th {text-align:left;}
+#addtable {position:relative; top:30px; right:-30px;}
+#addbutton {position:relative; top:280px;}
+#backbutton {position:relative; top:256px; right:800px;}
+
+/* settings.php */
+#settings input {width:300px;}
+#backbutton {position:relative; top:256px; right:800px;}
+
+/* newround.php */
+#useRoundButton {position:relative; top:280px;}
+#baner th {text-align:left;}
