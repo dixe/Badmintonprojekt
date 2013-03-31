@@ -1,6 +1,7 @@
+<!DOCTYPE html>
 <html>
 <header>
-<link rel="stylesheet" type="text/css" href="style.css"
+<link rel="stylesheet" type="text/css" href="style.css">
 </header>
 <body>
 <center>
@@ -9,18 +10,102 @@
     <th><h1>Spilleroversigt</h1></th> <!-- Overskrift oeverst -->
   </tr>
   <tr id='innerEdge'>
-    <td> <!-- Hovedindholdet i midten -->
-      <div id='content'> 
+    <td>
+      <div id='content'> <!-- Hovedindholdet i midten -->
+        <form action='newround.php' method='post'>
+        <p id='fieldCount'>Antal baner: <input type='text' name='baner'></p>
         <table id='playerlist'>
+          <tr><th id='spiller'>Spiller</th><th>Deltagende</th></tr>
+          <!-- Spillerliste start -->
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
         </table>
       </div>
     </td>
-    <td>
-      <div id='buttonPanel'> <!-- Knapperne til hoejre -->
+    <td id='buttonPanel'>
+      <div id='buttons'> <!-- Knapperne til hoejre -->
+        <input type='submit' value='Generer runde' id='button2'></form>
         <form action='addplayer.php'><input type='submit' value='Tilføj spiller' class='button1'></form>
-        <form action='editplayer.php'><input type='submit' value='Rediger spiller' class='button1'></form>
+        <form action='editplayer.php'><input type='hidden' name='selectedPlayer' value='playerid'><br><input type='submit' value='Rediger spiller' class='button1'></form><br>
         <form action='settings.php'><input type='submit' value='Indstillinger' class='button1'></form>
-        <form action='newround.php'><input type='submit' value='Generer runde' id='button2'></form>
       </div>
     </td>
   </tr>
@@ -28,7 +113,7 @@
     <td>
     </td>
     <td>
-    <p id='clubname'>Måløv Badminton Club</p>
+      Måløv Badminton Club
     </td>
   </tr>
 </table>
