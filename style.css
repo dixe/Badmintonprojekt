@@ -1,0 +1,10 @@
+#mainframe {font-family:Verdana, Geneva, sans-serif; border-collapse:collapse;}
+#content {min-height:650px; min-width:800px; }
+#innerEdge, #bottombar {border:1px solid black; background-color:lightgrey;}
+#statusbar {color:red; min-height:20px;}
+#clubname {font-size:0.85em; color:black; }
+
+/* bruges af main.php  */
+#buttonPanel input {width:150px;}
+.button1 {position:relative; top:-170px;}
+#button2 {position:relative; top:220px;}
