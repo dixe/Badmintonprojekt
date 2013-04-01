@@ -36,3 +36,6 @@
 #useRoundButton {position:relative; top:280px;}
 #baner th {text-align:left;}
 #baner {position:relative; top:30px; right:-30px;}
+
+/* login.php */
+#login {margin-left:400px; margin-top:200px;}
