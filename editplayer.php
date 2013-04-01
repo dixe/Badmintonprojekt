@@ -12,8 +12,8 @@
   <tr id='innerEdge'>
     <td> 
       <div id='content'> <!-- Hovedindholdet i midten -->
-        <form action='addplayer.php' method='post'>
-        <table id='addtable'>
+        <form action='editplayer.php' method='post'>
+        <table id='edittable'>
           <tr>
             <th>Navn</th><td><input type='text' name='name'></td>
           </tr>
@@ -74,7 +74,8 @@
     </td>
     <td>
       <div id='buttons'>
-        <input id='addbutton' type='submit' value='Tilføj spiller'></form>
+        <input id='editbutton' type='submit' value='Gem ændringer'></form>
+        <form action='main.php'><input id='deletebutton' type='submit' value='Slet spiller'></form>
         <form action='main.php'><input id='backbutton' type='submit' value='Tilbage'></form>
       </div>
     </td>
