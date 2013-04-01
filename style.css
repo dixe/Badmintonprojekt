@@ -21,6 +21,12 @@
 #addbutton {position:relative; top:280px;}
 #backbutton {position:relative; top:256px; right:800px;}
 
+/* editplayer.php */
+#editbutton {position:relative; top:305px;}
+#deletebutton {position:relative; right:800px;}
+#edittable th {text-align:left;}
+#edittable {position:relative; top:30px; right:-30px;}
+
 /* settings.php */
 #settings input {width:300px;}
 #backbutton {position:relative; top:256px; right:800px;}
@@ -28,3 +34,4 @@
 /* newround.php */
 #useRoundButton {position:relative; top:280px;}
 #baner th {text-align:left;}
+#baner {position:relative; top:30px; right:-30px;}
