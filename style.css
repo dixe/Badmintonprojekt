@@ -1,5 +1,5 @@
 #mainframe {font-family:Verdana, Geneva, sans-serif; border-collapse:collapse; padding:0;}
-#content {height:650px; width:800px; margin-top:30px; margin-left:30px;}
+#content {height:650px; width:500px; margin-top:30px; margin-left:30px;}
 #innerEdge, #bottombar, #buttonPanel {border:1px solid black; background-color:lightgrey;}
 
 /*  main.php  */
@@ -17,16 +17,15 @@
 /* addplayer.php */
 #addtable th {text-align:left;}
 #addbutton {position:relative; top:280px;}
-#backbutton {position:relative; top:256px; right:800px;}
+#backbutton {position:relative; top:256px; right:500px;}
 
 /* editplayer.php */
 #editbutton {position:relative; top:305px;}
-#deletebutton {position:relative; right:800px;}
+#deletebutton {position:relative; right:500px;}
 #edittable th {text-align:left;}
 
 /* settings.php */
 #settings input {width:300px;}
-#backbutton {position:relative; top:256px; right:800px;}
 
 /* newround.php */
 #useRoundButton {position:relative; top:280px;}
