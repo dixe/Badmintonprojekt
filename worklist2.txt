@@ -20,8 +20,6 @@ Programmering:
 
  - tilføj forbindelse til en MySQL database på settings siden
 
- - tilføj forbindelse til en MySQL database på admin siden (variabler)
-
  - tilføj forbindelse til en MySQL database på newround siden (når en runde anvendes)
 
 Rapport:
