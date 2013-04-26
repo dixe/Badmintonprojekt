@@ -1,0 +1,33 @@
+worklist til 2. sprint:
+
+Programmering:
+
+ - Ændrer hovedsiden således at man kan søge i spillerlisten (javascript)
+
+ - Ændrer hovedsiden således at spillere kan markeres og deres id sendes videre til "rediger spiller" siden (javascript)
+
+ - Ændrer hovedsiden således at man kan trykke på overskrifterne for spillertabellen for fx at få alle tilmeldte i toppen (javascript)
+
+ - tilføj eksporter funktionalitet der laver en HTML-tabel der kan kopieres direkte ind i excel
+
+ - lav et MySQL script der opretter de nødvendige relationer, med korrekte contraints, keys, typer og navne.
+
+ - tilføj forbindelse til en MySQL database på addplayer siden
+
+ - tilføj forbindelse til en MySQL database på editplayer siden
+
+ - tilføj forbindelse til en MySQL database på main siden
+
+ - tilføj forbindelse til en MySQL database på settings siden
+
+ - tilføj forbindelse til en MySQL database på admin siden (variabler)
+
+ - tilføj forbindelse til en MySQL database på newround siden (når en runde anvendes)
+
+Rapport:
+
+ - Systemdesign (evt. nogle af diagrammerne fra kapitel 6 - 7)
+
+ - Program- og systemtest (Af javascript, inputs og database forbindelse)
+
+ - Brugergrænseflade og interaktionsdesign (flow imellem siderne)
