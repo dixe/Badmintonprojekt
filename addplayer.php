@@ -18,11 +18,11 @@ $stmt->close();
 }
 mysqli_close($con);
 }catch(exception $e) {
-  echo "ex: ".$e;
-  //catch the right exception
+  print $e->getMessage();
+
 }
-//header("Location: main.php");
-//die();
+header("Location: main.php");
+die();
 }
 ?>
 <!DOCTYPE html>
