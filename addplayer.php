@@ -1,3 +1,30 @@
+<?php
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+try{
+$Name=$_POST['name'];
+$Day=$_POST['day'];
+$Styrke=$_POST['styrke'];
+$Gender=$_POST['gender'];
+$Oversidder=$_POST['oversidder'];
+$Single=$_POST['single'];
+
+if(!$con = mysqli_connect("localhost","root","secretpwD1111","badmintonprojekt")){
+echo "ERROR";
+}
+if($stmt = $con->prepare('INSERT INTO players values("",?,?,?,?,?,?,0,0)')){
+$stmt->bind_param('sissss',$Name,$Styrke,$Gender,$Oversidder,$Day,$Single);
+$stmt->execute();
+$stmt->close();
+}
+mysqli_close($con);
+}catch(exception $e) {
+  echo "ex: ".$e;
+  //catch the right exception
+}
+//header("Location: main.php");
+//die();
+}
+?>
 <!DOCTYPE html>
 <html>
 <header>
@@ -7,13 +34,13 @@
 <center>
 <table id='mainframe'>
   <tr>
-    <th><h1>Rediger spiller</h1></th> <!-- Overskrift oeverst -->
+    <th><h1>Tilføj spiller</h1></th> <!-- Overskrift oeverst -->
   </tr>
   <tr id='innerEdge'>
     <td>
       <div id='content'> <!-- Hovedindholdet i midten -->
-        <form action='editplayer.php' method='post'>
-        <table id='edittable'>
+        <form action='addplayer.php' method='post'>
+        <table id='addtable'>
           <tr>
             <th>Navn</th><td><input type='text' name='name'></td>
           </tr>
@@ -34,20 +61,15 @@
                 <option value='1'>1</option>
                 <option value='2'>2</option>
                 <option value='3'>3</option>
-                <option value='4'>4</option>
-                <option value='5'>5</option>
-                <option value='6'>6</option>
-                <option value='7'>7</option>
-                <option value='8'>8</option>
-                <option value='9'>9</option>
+              </select>
             </td>
           </tr>
           <tr>
             <th>Køn</th>
             <td>
               <select name='gender'>
-                <option value='male'>Mand</option>
-                <option value='female'>Kvinde</option>
+                <option value='M'>Mand</option>
+                <option value='F'>Kvinde</option>
               </select>
             </td>
           </tr>
@@ -55,26 +77,28 @@
             <th>Kan være oversidder</th>
             <td>
               <select name='oversidder'>
-                <option value='yes'>ja</option>
-                <option value='no'>nej</option>
+                <option value='Y'>ja</option>
+                <option value='N'>nej</option>
               </select>
             </td>
           </tr>
-          <tr></tr><tr></tr><tr></tr>
           <tr>
-            <th>Antal runder spillet</th><td><input type='text'></td>
-          </tr>
-          <tr>
-            <th>Antal runder oversiddet</th><td><input type='text'></td>
+            <th>Kan spille single</th>
+            <td>
+              <select name='single'>
+                <option value='Y'>ja</option>
+                <option value='N'>nej</option>
+              </select>
+            </td>
           </tr>
         </table>
       </div>
     </td>
     <td>
       <div id='buttons'>
-        <input id='editbutton' type='submit' value='Gem Ændringer'></form>
-        <form action='main.php'><input id='deletebutton' type='submit' value='Slet spiller'></form>
-        <form action='main.php'><input id='backbutton' type='submit' value='Tilbage'></form>
+        <input id='addbutton' type='submit' value='Tilføj spiller'></form>
+        <form action='main.php'><input  id='backbutton' type='submit'
+                                       value='Tilbage'></form>
       </div>
     </td>
   </tr>
