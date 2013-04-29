@@ -1,10 +1,4 @@
 <?php
-    function do_alert($msg)
-    {
-        echo '<script type="text/javascript">alert("' . $msg . '"); </script>';
-    }
-?>
-<?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 $Name=$_POST['name'];
 $Day=$_POST['day'];
