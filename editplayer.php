@@ -29,6 +29,11 @@
     $played    = $_POST['played'];
     $benched   = $_POST['benched'];
 
+    if(strlen($name) == 0) { //Hvis der prøves at sætte navnet til tomt, så refreshes siden med det oprindelige navn
+      header("Location: editplayer.php?playerid=" . $playerid);
+      die();
+    }
+    
     $stmt = $conn->prepare("UPDATE players " .
                            "SET Name = ?, Strength = ?, Gender = ?, Benchable = ?, " .
                            "Primary_day = ?, Single = ?, Played = ?, Benched = ? " . 
