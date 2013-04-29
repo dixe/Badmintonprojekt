@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 $Name=$_POST['name'];
 $Day=$_POST['day'];
@@ -96,7 +96,7 @@ die();
         </table>
       </div>
     </td>
-    <td>
+    <td id='buttonPanel'>
       <div id='buttons'>
         <input id='addbutton' type='submit' value='Tilføj spiller'></form>
         <form action='main.php'><input  id='backbutton' type='submit'
