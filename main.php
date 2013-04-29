@@ -26,86 +26,23 @@
         <table id='playerlist'>
           <tr><th id='spiller'>Spiller</th><th>Deltagende</th></tr>
           <!-- Spillerliste start -->
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
-          <tr><td>Navn</td><td><input type='checkbox' valid='playerid'>
+          <?php
+            try {
+              $conn = mysqli_connect("localhost", "root", "secretpwD1111", "badminton");
+                } catch(Exception $e) {
+                    print $e->getMessage();
+                  }
+                  
+            $SQLresult = mysqli_query($conn, "SELECT P_id, Name FROM players");
+            
+            while($row = mysqli_fetch_array($SQLresult)) {
+            print "<tr>" . 
+                      "<td>" . $row[1] . "</td>" .
+                      "<td><input type='checkbox' name='deltagere[]' value ='" . $row[0] . "'></td>" .
+                    "</tr>";
+            }
+            mysqli_close($conn);
+          ?>
         </table>
       </div>
     </td>
