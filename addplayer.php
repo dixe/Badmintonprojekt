@@ -7,13 +7,13 @@
 <center>
 <table id='mainframe'>
   <tr>
-    <th><h1>Tilføj spiller</h1></th> <!-- Overskrift oeverst -->
+    <th><h1>Rediger spiller</h1></th> <!-- Overskrift oeverst -->
   </tr>
   <tr id='innerEdge'>
-    <td> 
+    <td>
       <div id='content'> <!-- Hovedindholdet i midten -->
-        <form action='addplayer.php' method='post'>
-        <table id='addtable'>
+        <form action='editplayer.php' method='post'>
+        <table id='edittable'>
           <tr>
             <th>Navn</th><td><input type='text' name='name'></td>
           </tr>
@@ -40,8 +40,6 @@
                 <option value='7'>7</option>
                 <option value='8'>8</option>
                 <option value='9'>9</option>
-                <option value='10'>10</option>
-              </select>
             </td>
           </tr>
           <tr>
@@ -62,12 +60,20 @@
               </select>
             </td>
           </tr>
+          <tr></tr><tr></tr><tr></tr>
+          <tr>
+            <th>Antal runder spillet</th><td><input type='text'></td>
+          </tr>
+          <tr>
+            <th>Antal runder oversiddet</th><td><input type='text'></td>
+          </tr>
         </table>
       </div>
     </td>
     <td>
       <div id='buttons'>
-        <input id='addbutton' type='submit' value='Tilføj spiller'></form>
+        <input id='editbutton' type='submit' value='Gem Ændringer'></form>
+        <form action='main.php'><input id='deletebutton' type='submit' value='Slet spiller'></form>
         <form action='main.php'><input id='backbutton' type='submit' value='Tilbage'></form>
       </div>
     </td>
