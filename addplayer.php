@@ -1,6 +1,11 @@
 <?php
+    function do_alert($msg)
+    {
+        echo '<script type="text/javascript">alert("' . $msg . '"); </script>';
+    }
+?>
+<?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-try{
 $Name=$_POST['name'];
 $Day=$_POST['day'];
 $Styrke=$_POST['styrke'];
@@ -8,18 +13,21 @@ $Gender=$_POST['gender'];
 $Oversidder=$_POST['oversidder'];
 $Single=$_POST['single'];
 
-if(!$con = mysqli_connect("localhost","root","secretpwD1111","badmintonprojekt")){
-echo "ERROR";
+if(strlen($Name)==0){
+  header("Location: addplayer.php");
+  die();
 }
-if($stmt = $con->prepare('INSERT INTO players values("",?,?,?,?,?,?,0,0)')){
-$stmt->bind_param('sissss',$Name,$Styrke,$Gender,$Oversidder,$Day,$Single);
-$stmt->execute();
-$stmt->close();
-}
-mysqli_close($con);
+try{
+  $con = mysqli_connect("localhost","root","secretpwD1111","badminton");
+  if($stmt = $con->prepare('INSERT INTO players values("",?,?,?,?,?,?,0,0)')){
+    $stmt->bind_param('sissss',$Name,$Styrke,$Gender,$Oversidder,$Day,$Single);
+    $stmt->execute();
+    $stmt->close();
+  }
+  mysqli_close($con);
+
 }catch(exception $e) {
   print $e->getMessage();
-
 }
 header("Location: main.php");
 die();
