@@ -7,7 +7,7 @@
 <center>
 <table id='mainframe'>
   <tr>
-    <th><h1>TrÃ¦ningssystem</h1></th> <!-- Overskrift oeverst -->
+    <th><h1>Træningssystem</h1></th> <!-- Overskrift oeverst -->
   </tr>
   <tr id='innerEdge'>
     <td>
@@ -27,7 +27,7 @@
     <td>
     </td>
     <td>
-      MÃ¥lÃ¸v Badminton Club
+      Måløv Badminton Club
     </td>
   </tr>
 </table>

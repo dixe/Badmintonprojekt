@@ -18,7 +18,7 @@
     die();
   }
   
-  if(isset($_POST['playerid'])) { //Eksisterer kun ved en Ã¦ndring command, nÃ¥r delete ikke var true
+  if(isset($_POST['playerid'])) { //Eksisterer kun ved en ændring command, når delete ikke var true
     $playerid  = $_POST['playerid'];
     $name      = $_POST['name'];
     $day       = $_POST['day'];
@@ -82,7 +82,7 @@
             <th>Navn</th><td><input type='text' name='name' value='<?php print $name; ?>'></td>
           </tr>
           <tr>
-            <th>PrimÃ¦r Spilleaften</th>
+            <th>Primær Spilleaften</th>
             <td>
               <select name='day' selected=''>
                 <option value='Torsdag' <?php if($day == 'Torsdag') { print 'Selected'; } ?>>Torsdag</option>
@@ -102,7 +102,7 @@
             </td>
           </tr>
           <tr>
-            <th>KÃ¸n</th>
+            <th>Køn</th>
             <td>
               <select name='gender'>
                 <option value='M' <?php if($gender == 'M') { print 'Selected'; } ?>>Mand</option>
@@ -111,7 +111,7 @@
             </td>
           </tr>
           <tr>
-            <th>Kan vÃ¦re oversidder</th>
+            <th>Kan være oversidder</th>
             <td>
               <select name='benchable'>
                 <option value='Y' <?php if($benchable == 'Y') { print 'Selected'; } ?>>Ja</option>
@@ -138,9 +138,9 @@
         </table>
       </div>
     </td>
-    <td>
+    <td id='buttonPanel'>
       <div id='buttons'>
-        <input id='editbutton' type='submit' value='Gem Ã¦ndringer'></form>
+        <input id='editbutton' type='submit' value='Gem ændringer'></form>
         <form action='editplayer.php' method='post'>
           <input type='hidden' name='playerid' value='<?php print $playerid; ?>'>
           <input id='deletebutton' name='deletebutton' type='submit' value='Slet spiller'>
@@ -153,7 +153,7 @@
     <td>
     </td>
     <td>
-      MÃ¥lÃ¸v Badminton Club
+      Måløv Badminton Club
     </td>
   </tr>
 </table>

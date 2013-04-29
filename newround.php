@@ -13,15 +13,17 @@
     <td> 
       <div id='content'> <!-- Hovedindholdet i midten -->
         <table id='baner'>
-          <tr><th>1. Bane:</th><td>Navn 1, Navn 2 vs Navn 3, Navn 4</td></tr>
-          <tr><th>2. Bane:</th><td>Navn 1, Navn 2 vs Navn 3, Navn 4</td></tr>
-          <tr><th>3. Bane:</th><td>Navn 1, Navn 2 vs Navn 3, Navn 4</td></tr>
-          <tr><th>4. Bane:</th><td>Navn 1, Navn 2 vs Navn 3, Navn 4</td></tr>
-          <tr><th>Oversiddere:</th><td>Navn 5, Navn 6, Navn 7</td></tr>
+          <?php 
+            $deltagere = $_POST['deltagere'];
+          
+            foreach($deltagere as $deltager) {
+              print "<tr><td>" . $deltager . "</td><tr>";
+            }
+          ?>
         </table>
       </div>
     </td>
-    <td>
+    <td id='buttonPanel'>
       <div id='buttons'>
         <form action='newround.php'><input id='useRoundButton' type='submit' value='Anvend runde'></form>
         <form action='main.php'><input id='backbutton' type='submit' value='Tilbage'></form>
@@ -32,7 +34,7 @@
     <td>
     </td>
     <td>
-      MÃ¥lÃ¸v Badminton Club
+      Måløv Badminton Club
     </td>
   </tr>
 </table>

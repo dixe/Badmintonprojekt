@@ -30,14 +30,14 @@
           <tr>
             <td>
               <form action=settings.php>
-                <input type='button' value='Ny sÃ¦son'>
+                <input type='button' value='Ny sæson'>
               </form>
             </td>
           </tr>
         </table>
       </div>
     </td>
-    <td>
+    <td id='buttonPanel'>
       <div id='buttons'>
         <form action='main.php'><input id='backbutton' type='submit' value='Tilbage'></form>
       </div>
@@ -47,7 +47,7 @@
     <td>
     </td>
     <td>
-      MÃ¥lÃ¸v Badminton Club
+      Måløv Badminton Club
     </td>
   </tr>
 </table>
