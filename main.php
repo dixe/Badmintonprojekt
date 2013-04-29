@@ -49,8 +49,8 @@
     <td id='buttonPanel'>
       <div id='buttons'> <!-- Knapperne til hoejre -->
         <input type='submit' value='Generer runde' id='button2'></form>
-        <form action='addplayer.php'><input type='submit' value='TilfÃ¸j spiller' class='button1'></form>
-        <form action='editplayer.php'><input type='hidden' name='selectedPlayer' value='playerid'><br><input type='submit' value='Rediger spiller' class='button1'></form><br>
+        <form action='addplayer.php'><input type='submit' value='Tilføj spiller' class='button1'></form>
+        <form action='editplayer.php'><input type='hidden' name='playerid' value=''><br><input type='submit' value='Rediger spiller' class='button1'></form><br>
         <form action='settings.php'><input type='submit' value='Indstillinger' class='button1'></form>
       </div>
     </td>
@@ -59,7 +59,7 @@
     <td>
     </td>
     <td>
-      MÃ¥lÃ¸v Badminton Club
+      Måløv Badminton Club
     </td>
   </tr>
 </table>
