@@ -13,7 +13,16 @@
     <td>
       <div id='content'> <!-- Hovedindholdet i midten -->
         <form action='newround.php' method='post'>
-        <p id='fieldCount'>Antal baner: <input type='text' name='baner'></p>
+        <p id='fieldCount'>Antal baner:
+          <select name='baner'>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5</option>
+            <option value='6'>6</option>
+          </select>
+        </p>
         <table id='playerlist'>
           <tr><th id='spiller'>Spiller</th><th>Deltagende</th></tr>
           <!-- Spillerliste start -->
