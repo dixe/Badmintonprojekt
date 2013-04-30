@@ -2,6 +2,19 @@
 <html>
 <header>
 <link rel="stylesheet" type="text/css" href="style.css">
+<script>
+var highlighted = null;
+function highlightRow(Row) {
+  if (highlighted != null) { highlighted.style.backgroundColor="lightgrey"; }
+  highlighted = Row;
+  Row.style.backgroundColor="rgb(162,162,162)";
+  
+  var playerid = Row.getElementsByTagName("input")[0].value;
+  document.getElementById("editform").action="editplayer.php";
+  document.getElementById("playerid").value=playerid;
+  document.getElementById("playerid").name="playerid";
+}
+</script>
 </header>
 <body>
 <center>
@@ -36,7 +49,7 @@
             $SQLresult = mysqli_query($conn, "SELECT P_id, Name FROM players");
             
             while($row = mysqli_fetch_array($SQLresult)) {
-            print "<tr>" . 
+            print "<tr onclick='highlightRow(this)'>" . 
                       "<td>" . $row[1] . "</td>" .
                       "<td><input type='checkbox' name='deltagere[]' value ='" . $row[0] . "'></td>" .
                     "</tr>";
@@ -50,7 +63,7 @@
       <div id='buttons'> <!-- Knapperne til hoejre -->
         <input type='submit' value='Generer runde' id='button2'></form>
         <form action='addplayer.php'><input type='submit' value='Tilføj spiller' class='button1'></form>
-        <form action='editplayer.php'><input type='hidden' name='playerid' value=''><br><input type='submit' value='Rediger spiller' class='button1'></form><br>
+        <form action='' id='editform'><input type='hidden' name='' id='playerid' value=''><br><input type='submit' value='Rediger spiller' class='button1'></form><br>
         <form action='settings.php'><input type='submit' value='Indstillinger' class='button1'></form>
       </div>
     </td>
