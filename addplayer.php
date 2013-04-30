@@ -79,7 +79,7 @@ die();
             <th>Kan være oversidder</th>
             <td>
               <select name='oversidder'>
-                <option value='Y'>ja</option>
+                <option value='Y'>Ja</option>
                 <option value='N'>nej</option>
               </select>
             </td>
@@ -88,7 +88,7 @@ die();
             <th>Kan spille single</th>
             <td>
               <select name='single'>
-                <option value='Y'>ja</option>
+                <option value='Y'>Ja</option>
                 <option value='N'>nej</option>
               </select>
             </td>
