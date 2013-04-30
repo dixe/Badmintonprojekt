@@ -9,8 +9,8 @@
 #button2 {position:relative; top:320px;}
 #buttons {margin:auto; width:70%;}
 #content {overflow:auto;}
-#playerlist td {text-align:left;}
-#spiller {width:400px; text-align:left;}
+#playerlist td {text-align:left; max-width:350px; width:350px;}
+#spiller {text-align:left;}
 #playerlist th {background-color:grey;}
 
 
