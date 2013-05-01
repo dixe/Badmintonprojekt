@@ -14,6 +14,9 @@ h1 {display: inline;}
 #spiller {text-align:left; max-width:370px; width: 370px;}
 #playerlist th {background-color:grey;}
 #fieldCount select {width:40px;}
+#fieldCount {position: relative; left:60px;}
+#search input:first-child {width:200px;}
+form {display:inline;}
 
 /* addplayer.php */
 #addtable th {text-align:left;}
