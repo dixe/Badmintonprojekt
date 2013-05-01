@@ -1,0 +1,12 @@
+worklist til 3. sprint:
+
+Programmering:
+
+- tilføj et cookie system via login siden, og sørg for at alle de andre sider checker om personen er logget ind først
+
+- sikre alle inputs imod ugyldige værdier og XSS
+
+- tilføj genereringsalgoritme ud fra kundens krav
+
+Rapport:
+
