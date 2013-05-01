@@ -8,5 +8,7 @@ Programmering:
 
 - tilføj genereringsalgoritme ud fra kundens krav
 
+- ændrer scrollbar på main.php så den kun scroller på spillertabellens indhold.
+
 Rapport:
 
