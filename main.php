@@ -18,7 +18,7 @@
           <input type='button' onclick='search()' value='Søg'>
         </span>
         <form action='newround.php' method='post'>
-        <span>
+        <span id='fieldCount'>
           Antal baner:
           <select name='baner'>
             <option value='1'>1</option>
@@ -56,7 +56,7 @@
       <div id='buttons'> <!-- Knapperne til hoejre -->
         <input type='submit' value='Generer runde' id='button2'></form>
         <form action='addplayer.php'><input type='submit' value='Tilføj spiller' class='button1'></form>
-        <form action='editplayer.php'><input type='hidden' name='playerid' id='playerid' value=''><br><input type='button' value='Rediger spiller' class='button1' id='editsubmit'></form><br>
+        <form action='editplayer.php'><input type='hidden' name='playerid' id='playerid' value=''><input type='button' value='Rediger spiller' class='button1' id='editsubmit'></form>
         <form action='settings.php'><input type='submit' value='Indstillinger' class='button1'></form>
       </div>
     </td>
