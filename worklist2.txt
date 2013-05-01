@@ -8,8 +8,6 @@ Programmering:
 
  - Ændrer hovedsiden således at man kan trykke på overskrifterne for spillertabellen for fx at få alle tilmeldte i toppen (javascript)
 
- - tilføj eksporter funktionalitet der laver en HTML-tabel der kan kopieres direkte ind i excel
-
  - lav et MySQL script der opretter de nødvendige relationer, med korrekte contraints, keys, typer og navne.
 
  - tilføj forbindelse til en MySQL database på addplayer siden
@@ -29,3 +27,5 @@ Rapport:
  - Program- og systemtest (Af javascript, inputs og database forbindelse)
 
  - Brugergrænseflade og interaktionsdesign (flow imellem siderne)
+
+ - Review af de 2 artikler som beskrevet i krav til 3. delrapport
