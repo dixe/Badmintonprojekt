@@ -2,19 +2,7 @@
 <html>
 <header>
 <link rel="stylesheet" type="text/css" href="style.css">
-<script>
-var highlighted = null;
-function highlightRow(Row) {
-  if (highlighted != null) { highlighted.style.backgroundColor="lightgrey"; }
-  highlighted = Row;
-  Row.style.backgroundColor="rgb(162,162,162)";
-  
-  var playerid = Row.getElementsByTagName("input")[0].value;
-  document.getElementById("editform").action="editplayer.php";
-  document.getElementById("playerid").value=playerid;
-  document.getElementById("playerid").name="playerid";
-}
-</script>
+<script src="scripts.js"></script>
 </header>
 <body>
 <center>
@@ -25,8 +13,13 @@ function highlightRow(Row) {
   <tr id='innerEdge'>
     <td>
       <div id='content'> <!-- Hovedindholdet i midten -->
+        <span id='search'>
+          <input type='text' id='searchText' onkeydown='if(event.keyCode == 13) search()'>
+          <input type='button' onclick='search()' value='Søg'>
+        </span>
         <form action='newround.php' method='post'>
-        <p id='fieldCount'>Antal baner:
+        <span>
+          Antal baner:
           <select name='baner'>
             <option value='1'>1</option>
             <option value='2'>2</option>
@@ -35,7 +28,7 @@ function highlightRow(Row) {
             <option value='5'>5</option>
             <option value='6'>6</option>
           </select>
-        </p>
+        </span>
         <table id='playerlist'>
           <tr><th id='spiller'>Spiller</th><th>Deltagende</th></tr>
           <!-- Spillerliste start -->
@@ -63,7 +56,7 @@ function highlightRow(Row) {
       <div id='buttons'> <!-- Knapperne til hoejre -->
         <input type='submit' value='Generer runde' id='button2'></form>
         <form action='addplayer.php'><input type='submit' value='Tilføj spiller' class='button1'></form>
-        <form action='' id='editform'><input type='hidden' name='' id='playerid' value=''><br><input type='submit' value='Rediger spiller' class='button1'></form><br>
+        <form action='editplayer.php'><input type='hidden' name='playerid' id='playerid' value=''><br><input type='button' value='Rediger spiller' class='button1' id='editsubmit'></form><br>
         <form action='settings.php'><input type='submit' value='Indstillinger' class='button1'></form>
       </div>
     </td>
