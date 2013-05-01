@@ -26,6 +26,10 @@ Rapport:
 
  - Program- og systemtest (Af javascript, inputs og database forbindelse)
 
- - Brugergrænseflade og interaktionsdesign (flow imellem siderne)
+ - Brugergrænseflade og interaktionsdesign (flow imellem siderne og opdatering af billederne)
+
+ - Projektsamarbejdet
+
+ - Versionsstyring
 
  - Review af de 2 artikler som beskrevet i krav til 3. delrapport
