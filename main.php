@@ -30,7 +30,7 @@
           </select>
         </span>
         <table id='playerlist'>
-          <tr><th id='spiller'>Spiller</th><th>Deltagende</th></tr>
+          <tr><th onclick="sortTable(0)" id='spiller'>Spiller</th><th onclick="sortTable(1)">Deltagende</th></tr>
           <!-- Spillerliste start -->
           <?php
             try {

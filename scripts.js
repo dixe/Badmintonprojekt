@@ -25,3 +25,51 @@ function search() {
     }
   }
 }
+
+function sortTable(ind) {
+  var table = document.getElementById("playerlist");
+  var tableA= new Array();
+  var i = 1;//starting at 1 to ignore table header
+  while(row = table.rows[i]) {
+      tableA[i-1]=row;
+      i++;
+  }
+  if(ind==1){
+    tableA.sort(function(a,b){    
+      if(a.cells[1].firstChild.checked && b.cells[1].firstChild.checked){
+        return 0
+      }
+      if(a.cells[1].firstChild.checked && !b.cells[1].firstChild.checked){
+        return -1
+      }
+      if(!a.cells[1].firstChild.checked && b.cells[1].firstChild.checked){
+        return 1;
+      } 
+    
+    });
+  }else{    
+    var i, j, tmp, tmp2;
+    for (i = 0; i < tableA.length - 1; i++)
+    {
+        tmp = i;
+        for (j = i + 1; j < tableA.length; j++){
+            if (tableA[j].cells[0].innerHTML < tableA[tmp].cells[0].innerHTML){
+                tmp = j;
+              }
+        } 
+        tmp2 = tableA[tmp];
+        tableA[tmp] = tableA[i];
+        tableA[i] = tmp2;
+    }
+  }
+
+  var i = 0;
+  while ( table.rows.length > 1)
+   {
+    table.deleteRow(1);
+  }
+  while(i<tableA.length) {   
+      table.appendChild(tableA[i]);
+      i++;
+  }
+}
