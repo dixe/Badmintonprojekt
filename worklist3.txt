@@ -12,3 +12,18 @@ Programmering:
 
 Rapport:
 
+- UML component diagram til "Systemdesign sammenfatning" punktet: se side 326 i bogen samt opdatering af teksten.
+
+- Opskrivning af tests specifikt (se krav .pdf) samt opdatering af teksten.
+
+- Youtube video der gennemgår de 3 vigtigste use cases.
+
+- Tænk-højt forsøg??
+
+- Tilføj "generet bane" siden til brugergrænseflade punktet
+
+- Opdater versionsstyring tekst og gitlog
+
+- Opdater "Projektsamarbejdet" med mere konklusion på forløbet. (se krav .pdf)
+
+- de 2 review opgaver
