@@ -4,7 +4,7 @@ function highlightRow(Row) {
   if (highlighted != null) { highlighted.style.backgroundColor="lightgrey"; }
   highlighted = Row;
   Row.style.backgroundColor="rgb(162,162,162)";
-  
+
   var playerid = Row.getElementsByTagName("input")[0].value;
   document.getElementById("playerid").value=playerid;
   document.getElementById("editsubmit").type="submit"; //gør at 'rediger spiller' knappen virker
@@ -43,11 +43,24 @@ function sortTable(ind) {
       return 0;
     });
   }
-  if(ind==1) { //sort on the checkboxes first, if equal sort on the name
-    tableA.sort(function(a,b) {    
-      if(a.cells[1].firstChild.checked < b.cells[1].firstChild.checked)
+  if(ind==1) { //sort on the primary day, if equal sort on the playername
+    tableA.sort(function(a,b) {
+      if(a.cells[1].innerHTML > b.cells[1].innerHTML)
         return 1;
-      if(a.cells[1].firstChild.checked > b.cells[1].firstChild.checked)
+      if(a.cells[1].innerHTML < b.cells[1].innerHTML)
+        return -1;
+      if(a.cells[0].innerHTML > b.cells[0].innerHTML)
+        return 1;
+      if(a.cells[0].innerHTML < b.cells[0].innerHTML)
+        return -1;
+      return 0;
+    });
+  }
+  if(ind==2) { //sort on the checkboxes first, if equal sort on the playername
+    tableA.sort(function(a,b) {
+      if(a.cells[2].firstChild.checked < b.cells[2].firstChild.checked)
+        return 1;
+      if(a.cells[2].firstChild.checked > b.cells[2].firstChild.checked)
         return -1;
       if(a.cells[0].innerHTML > b.cells[0].innerHTML)
         return 1;
@@ -61,4 +74,19 @@ function sortTable(ind) {
       table.appendChild(tableA[i]);
       i++;
   }
+}
+
+//Laver tilfældige runder
+function createRandomRounds(players) {
+
+}
+
+//Vurderer de runder den får som input
+function evaluateRounds(rounds) {
+
+}
+
+//Laver en ny runder
+function newRound(players) {
+  var rounds = evaluateRounds(createRandomRounds(players));
 }

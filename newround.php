@@ -7,17 +7,23 @@
 <center>
 <table id='mainframe'>
   <tr>
-    <th><h1>Banegenerering:</h1></th> <!-- Overskrift oeverst -->
+    <th><h1>Banegenerering</h1></th> <!-- Overskrift oeverst -->
   </tr>
   <tr id='innerEdge'>
-    <td> 
+    <td>
       <div id='content'> <!-- Hovedindholdet i midten -->
         <table id='baner'>
-          <?php 
-            $deltagere = $_POST['deltagere'];
-          
-            foreach($deltagere as $deltager) {
-              print "<tr><td>" . $deltager . "</td><tr>";
+          <?php
+            if (isset($_POST['deltagere']) && isset($_POST['baner'])) {
+              $deltagere = $_POST['deltagere'];
+              $baner = $_POST['baner'];
+              foreach($deltagere as $deltager) {
+                print "<tr><td>" . $deltager . "</td><tr>";
+              }
+              print "antal baner:" . $baner;
+              print "<script>"; // laver array med spiller info fra databasen som bruges til at genere
+              print "var players = []";
+              print "</script>";
             }
           ?>
         </table>
@@ -25,6 +31,7 @@
     </td>
     <td id='buttonPanel'>
       <div id='buttons'>
+        <button onclick='newRound(players)' id='newRoundButton'>Ny runde</button>
         <form action='newround.php'><input id='useRoundButton' type='submit' value='Anvend runde'></form>
         <form action='main.php'><input id='backbutton' type='submit' value='Tilbage'></form>
       </div>
