@@ -1,4 +1,4 @@
-<?php 
+<?php
   try {
       $conn = mysqli_connect("localhost", "root", "secretpwD1111", "badminton");
     } catch(Exception $e) {
@@ -7,17 +7,17 @@
 
   if(isset($_POST['deletebutton'])) { //Eksisterer kun ved slet command
     $playerid = $_POST['playerid'];
-    
-    $stmt = $conn->prepare("DELETE FROM players WHERE P_id = ?");                
+
+    $stmt = $conn->prepare("DELETE FROM players WHERE P_id = ?");
     $stmt->bind_param('i', $playerid);
     $stmt->execute();
     $stmt->close();
     mysqli_close($conn);
-    
+
     header("Location: main.php");
     die();
   }
-  
+
   if(isset($_POST['playerid'])) { //Eksisterer kun ved en ændring command, når delete ikke var true
     $playerid  = $_POST['playerid'];
     $name      = $_POST['name'];
@@ -33,23 +33,23 @@
       header("Location: editplayer.php?playerid=" . $playerid);
       die();
     }
-    
+
     $stmt = $conn->prepare("UPDATE players " .
                            "SET Name = ?, Strength = ?, Gender = ?, Benchable = ?, " .
-                           "Primary_day = ?, Single = ?, Played = ?, Benched = ? " . 
+                           "Primary_day = ?, Single = ?, Played = ?, Benched = ? " .
                            "WHERE P_id = ?");
     $stmt->bind_param('sissssiii', $name, $strength, $gender, $benchable, $day, $single, $played, $benched, $playerid);
     $stmt->execute();
     $stmt->close();
     mysqli_close($conn);
-   
+
     header("Location: main.php");
     die();
   }
-    
+
   if(isset($_GET['playerid']) && strlen($_GET['playerid']) > 0) { //Henter alt information om den valgte spiller ud af databasen
     $playerid = $_GET['playerid'];
-      
+
     $stmt = $conn->prepare("SELECT Name, Primary_day, Strength, Gender, " .
                            "Benchable, Single, Played, Benched " .
                            "FROM players " .
@@ -78,7 +78,7 @@
     <th><h1>Rediger spiller</h1></th> <!-- Overskrift oeverst -->
   </tr>
   <tr id='innerEdge'>
-    <td> 
+    <td>
       <div id='content'> <!-- Hovedindholdet i midten -->
         <form action='editplayer.php' method='post'>
         <input type='hidden' name='playerid' value='<?php print $playerid; ?>'>
