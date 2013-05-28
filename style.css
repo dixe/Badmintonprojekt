@@ -38,6 +38,7 @@ form {display:inline;}
 #newRoundButton {position:relative; top:200px;}
 #baner th {text-align:left;}
 #baner {position:relative; top:30px; right:-30px;}
+.bane {width:40px;}
 
 /* login.php */
 #login {margin-left:220px; margin-top:200px;}
