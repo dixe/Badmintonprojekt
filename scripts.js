@@ -120,17 +120,19 @@ function printRound(id,bane) {
 function printRounds(rounds,fordeling) {
   bane = 1;
   if(fordeling=='double') {
-    for(i=0; i<rounds.length; i=i+4) { //denne løkke repræsenterer hver bane
-      printRound(rounds[i],i+A);
-      printRound(rounds[i+1],i+A);
-      printRound(rounds[i+2],i+B);
-      printRound(rounds[i+3],i+B);
+    for(i=0; i<rounds.length; i=i+4) { //denne løkkes iteration repræsenterer hver banes opsætning
+      printRound(rounds[i],bane+'A');
+      printRound(rounds[i+1],bane+'A');
+      printRound(rounds[i+2],bane+'B');
+      printRound(rounds[i+3],bane+'B');
+      bane++;
     }
   }
   else if(fordeling=='single') {
-    for(i=0; i<rounds.length; i=i+2) { //denne løkke repræsenterer hver bane
-      printRound(rounds[i],i+A);
-      printRound(rounds[i+1],i+B);
+    for(i=0; i<rounds.length; i=i+2) { //denne løkkes iteration repræsenterer hver banes opsætning
+      printRound(rounds[i],bane+'A');
+      printRound(rounds[i+1],bane+'B');
+      bane++;
     }
   }
 }
