@@ -38,7 +38,7 @@
                   print "</script>";
                   print "<tr>" .
                           "<td>" . $row[1] . "</td>" .
-                          "<td><input type='text' name='" . $row[0] . "' class='bane'></td>" .
+                          "<td><input type='text' id='" . $row[0] . "' class='bane'></td>" .
                         "</tr>";
                 }
               }

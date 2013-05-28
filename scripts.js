@@ -112,3 +112,26 @@ function newRound(players,baner) {
   var rounds = evaluateRounds(createRandomRounds(playing));
   alert(playing);
 }
+
+function printRound(id,bane) {
+  document.getElementById(id).value = bane;
+}
+
+function printRounds(rounds,fordeling) {
+  bane = 1;
+  if(fordeling=='double') {
+    for(i=0; i<rounds.length; i=i+4) { //denne løkke repræsenterer hver bane
+      printRound(rounds[i],i+A);
+      printRound(rounds[i+1],i+A);
+      printRound(rounds[i+2],i+B);
+      printRound(rounds[i+3],i+B);
+    }
+  }
+  else if(fordeling=='single') {
+    for(i=0; i<rounds.length; i=i+2) { //denne løkke repræsenterer hver bane
+      printRound(rounds[i],i+A);
+      printRound(rounds[i+1],i+B);
+    }
+  }
+}
+
