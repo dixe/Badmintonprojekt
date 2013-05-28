@@ -23,32 +23,37 @@
                 } catch(Exception $e) {
                     print $e->getMessage();
                   }
-              print "antal baner:" . $baner;
               print "<script>"; // laver array med spiller info fra databasen som bruges til at genere
               print "var baner = $baner;";
               print "var players = [];";
               print "</script>";
-              if($stmt =$conn->prepare("SELECT * FROM players where p_id=?")){
-              foreach($deltagere as $deltager) {
-                $stmt->bind_param("i",$deltager);
-                $stmt->execute();
-                $stmt->bind_result($row[0],$row[1],$row[2],$row[3],$row[4],$row[5],$row[6],$row[7],$row[8]);
-                $stmt->fetch();
-                print "<script>";
-                print "players.push([$row[0],'$row[1]',$row[2],'$row[3]','$row[4]','$row[5]','$row[6]',$row[7],$row[8]])";
-                print "</script>";
+              if($stmt =$conn->prepare("SELECT * FROM players where p_id=?")) {
+                foreach($deltagere as $deltager) {
+                  $stmt->bind_param("i",$deltager);
+                  $stmt->execute();
+                  $stmt->bind_result($row[0],$row[1],$row[2],$row[3],$row[4],$row[5],$row[6],$row[7],$row[8]);
+                  $stmt->fetch();
+                  print "<script>";
+                  print "players.push([$row[0],'$row[1]',$row[2],'$row[3]','$row[4]','$row[5]','$row[6]',$row[7],$row[8]])";
+                  print "</script>";
+                  print "<tr>" .
+                          "<td>" . $row[1] . "</td>" .
+                          "<td><input type='text' name='" . $row[0] . "' class='bane'></td>" .
+                        "</tr>";
                 }
               }
             }
           ?>
         </table>
+
       </div>
+      <form action='main.php'><input type='submit' value='Tilbage'></form>
     </td>
     <td id='buttonPanel'>
       <div id='buttons'>
         <button onclick='newRound(players,baner)' id='newRoundButton'>Ny runde</button>
         <form action='newround.php'><input id='useRoundButton' type='submit' value='Anvend runde'></form>
-        <form action='main.php'><input id='backbutton' type='submit' value='Tilbage'></form>
+
       </div>
     </td>
   </tr>
