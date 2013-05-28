@@ -2,6 +2,7 @@
 <html>
 <header>
 <link rel="stylesheet" type="text/css" href="style.css">
+<script src="scripts.js"></script>
 </header>
 <body>
 <center>
@@ -17,13 +18,27 @@
             if (isset($_POST['deltagere']) && isset($_POST['baner'])) {
               $deltagere = $_POST['deltagere'];
               $baner = $_POST['baner'];
-              foreach($deltagere as $deltager) {
-                print "<tr><td>" . $deltager . "</td><tr>";
-              }
+              try {
+              $conn = mysqli_connect("localhost", "root", "secretpwD1111", "badminton");
+                } catch(Exception $e) {
+                    print $e->getMessage();
+                  }
               print "antal baner:" . $baner;
               print "<script>"; // laver array med spiller info fra databasen som bruges til at genere
-              print "var players = []";
+              print "var baner = $baner;";
+              print "var players = [];";
               print "</script>";
+              if($stmt =$conn->prepare("SELECT * FROM players where p_id=?")){
+              foreach($deltagere as $deltager) {
+                $stmt->bind_param("i",$deltager);
+                $stmt->execute();
+                $stmt->bind_result($row[0],$row[1],$row[2],$row[3],$row[4],$row[5],$row[6],$row[7],$row[8]);
+                $stmt->fetch();
+                print "<script>";
+                print "players.push([$row[0],'$row[1]',$row[2],'$row[3]','$row[4]','$row[5]','$row[6]',$row[7],$row[8]])";
+                print "</script>";
+                }
+              }
             }
           ?>
         </table>
@@ -31,7 +46,7 @@
     </td>
     <td id='buttonPanel'>
       <div id='buttons'>
-        <button onclick='newRound(players)' id='newRoundButton'>Ny runde</button>
+        <button onclick='newRound(players,baner)' id='newRoundButton'>Ny runde</button>
         <form action='newround.php'><input id='useRoundButton' type='submit' value='Anvend runde'></form>
         <form action='main.php'><input id='backbutton' type='submit' value='Tilbage'></form>
       </div>

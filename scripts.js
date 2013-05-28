@@ -77,16 +77,38 @@ function sortTable(ind) {
 }
 
 //Laver tilfældige runder
-function createRandomRounds(players) {
-
+function createRandomRounds(playing) {
+  for (i= playing.length-1;i>1;i--){
+    j= Math.floor(Math.random()*i)
+    var tmp =playing[j];
+    playing[j]=playing[i];
+    playing[i]=tmp;
+  return playing;
+  }
 }
 
 //Vurderer de runder den får som input
 function evaluateRounds(rounds) {
-
+  return rounds
 }
 
 //Laver en ny runder
-function newRound(players) {
-  var rounds = evaluateRounds(createRandomRounds(players));
+function newRound(players,baner) {
+  var oversiddere =[];
+  var playing = players;
+  alert(baner);
+  alert(playing.length);
+  while (playing.length> baner*4){
+    var oversidder =playing[0];
+    for(player in playing){
+      if(player[8]>oversidder[8] && player[4]=='Y'){
+        oversidder=player;
+      }
+    }
+    oversiddere.push(oversidder);
+    var index = playing.indexOf(oversidder);
+    playing.splice(index,1);
+  }
+  var rounds = evaluateRounds(createRandomRounds(playing));
+  alert(playing);
 }
